@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scroll</title>
+    <style>
+        body {
+            height: 300vh;  
+        }
+        #tekst {
+            position: fixed;
+            top: 100px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="tekst">Teksten min</h1>
+
+    <script>
+        const tekst = document.getElementById("tekst");
+        function flyttMeg() {
+            tekst.style.left = (scrollY * 5) + "px";
+        }
+
+        window.addEventListener("scroll", flyttMeg);
+    </script>
+</body>
+</html>

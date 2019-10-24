@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.para {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/cafe03.jpg");
+    background-size: cover;
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+.content {
+    height: 100vh;
+}
+
+.c1 {
+    height: 50vh;
+}
+
+.p1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.p1 h1 {
+    color: white;
+    padding: 32px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.p2 {
+    background-image: url("./img/kafe.jpeg");
+}
+
