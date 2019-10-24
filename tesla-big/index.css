@@ -1,0 +1,73 @@
+
+:root {
+    --tid: 8s;
+}
+
+.hidden {
+    display: none;
+}
+
+.banner {
+    background-image: url("./img/bgr.jpg");
+    width: 1300px;
+    height: 663px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes drive {
+    0% {
+        left: -770px;
+    }
+    40% {
+        left: 300px;
+    }
+    80% {
+        left: 300px;
+    }
+    100% {
+        left: 2100px;
+    }
+}
+
+#bil {
+    position: absolute;
+    background-image: url("./img/red-car.png");
+    width: 753px;
+    height: 255px;
+    bottom: 180px;
+    left: 300px;
+    animation: drive var(--tid) infinite;
+}
+
+@keyframes snurr {
+    0% {
+        transform: rotate(0);
+    }
+    40% {
+        transform: rotate(2turn);
+    }
+    80% {
+        transform: rotate(2turn);
+    }
+    100% {
+        transform: rotate(4turn);
+    }
+}
+
+#bil img {
+    animation: snurr var(--tid) infinite;
+}
+
+#bakhjul {
+    position: absolute;
+    left: 160px;
+    bottom: 81px;
+}
+
+#forhjul {
+    position: absolute;
+    right: 135px;
+    bottom: 81px;
+}
