@@ -1,0 +1,46 @@
+
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#loader {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-auto-rows: 40px;
+    gap: 6px;
+}
+
+.firkant {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: darkorange;
+}
+
+@keyframes a5 {
+    0% { transform: translate(0, 0) }
+    8.33% { transform: translate(46px, 0) }  
+    16.66% { transform: translate(46px, -46px) }
+    25% { transform: translate(46px, -46px) }
+    33.33% { transform: translate(46px, -46px) }
+    41.66% { transform: translate(46px, -46px) }
+    50% { transform: translate(46px, -46px) }
+    58.33% { transform: translate(46px, -46px) }
+    66.66% { transform: translate(46px, -46px) }
+    75% { transform: translate(46px, -46px) }
+    83.33% { transform: translate(46px, -46px) }
+    91.66% { transform: translate(46px, -46px) }
+    100% { transform: translate(46px, -46px) }
+}
+
+.f5 {
+    animation: a5 12s linear;
+}
